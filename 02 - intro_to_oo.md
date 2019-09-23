@@ -18,6 +18,9 @@
 * classes are the blueprint for instances - object factories
 * objects have identity, attributes, and action
 * objects can accept messages; what they do with the message is defined in the object's class
+* $global_variable -> global scope
+* @@class_variable -> class scope, static across all class instances
+* @instance_variable -> class object scope, value specific to object instance
 
 --------------------------
 
