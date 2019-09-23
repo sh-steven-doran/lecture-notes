@@ -1,4 +1,4 @@
-# Many-To-Many Lecture Notes
+# Inheritance Lecture Notes
 
 ### Learning Goals
 
@@ -17,6 +17,7 @@
 * Modules
 * DRY
 * Lookup Chain
+* `self` in different contexts
 
 ### Lecture Flow
 
@@ -24,6 +25,12 @@
 2. Tests are just ruby code - put `binding.pry`
 3. Build out Cat, Dog, and Fish classes according to tests
 4. Dry them out with Animal class
+    * explore `self` in different contexts
 5. Add `super` to cat initialize - `number_of_lives` attribute
+    * [`super` in Ruby Docs][1]
+    * call `super` with arguments and without
 6. Add a `mammal` module with custom action - `walk`
+    * `include` and `extend` module
+    * call `super` from `Dog#walk`
 
+[1]: https://ruby-doc.org/docs/keywords/1.9/Object.html#method-i-super
