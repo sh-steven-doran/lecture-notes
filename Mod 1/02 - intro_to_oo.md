@@ -15,24 +15,25 @@
 
 ### Hook
 
-* classes are the blueprint for instances - object factories
-* objects have identity, attributes, and action
-* objects can accept messages; what they do with the message is defined in the object's class
-* $global_variable -> global scope
-* @@class_variable -> class scope, static across all class instances
-* @instance_variable -> class object scope, value specific to object instance
+* objects have identity, attributes, behavior 
+* object can respond to messages
+* classes are object factories - they provide the blueprint for instances
+
 
 --------------------------
 
-```text
-Lecture Plan
+### Lecture Flow
 
-15m Everything is an Object in Ruby
-10m What is an object?
-35m Creating our own Objects
-===
- 1h Total
-```
+1. Everything is an object
+    * identity - `object.id`
+    * attributes - `array.length`
+    * behaviors - `array.concat`
+2. Messages
+    * different ways of calling methods
+    * what happens when an object can't respond to a message
+    * demonstrate `.methods`
+    * messages are sent, it's up to the object how to respond/implement 
+3. Custom objects
 
 ### Everything is an Object in Ruby
 
@@ -131,7 +132,7 @@ bank_account = {"user_id": 'a', "balance": 'yes'}
 
 ----
 
-1. initialize with @user_id and @balance as instance variables. _You should discuss how scoping works and how instance variables live in the scope of the class. Demo this by accessing this variable in another method like _`deposit`_._
+1. initialize with @user_id and @balance as instance variables. _You should discuss how scoping works and how instance variables live in the scope of the class. Demo this by accessing this variable in another method like `deposit`._
 2. Create custom getters and setters for instance properties. Then show `attr_accessor` macro to add getters and setters to your instance variables, and `attr_reader` and `attr_writer` to be more specfic.
 3. Add `@@all` as a class variable that lives outside each instance. This is an opportunity to hold on to all of the created instances of this class in memory in a place that is separate from each of the instances themselves. When adding new instances add `@@all << self` to `initialize`.
 4. Adding a method that interacts with one of the instance methods. This showcases implicit `self`. This is a good chance to use defined getters and setters inside of other methods to understand how Ruby interprets variables / method calls more deeply.
@@ -165,4 +166,4 @@ class BankAccount
 end
 ```
 
-* Once you've got some fun objects to play with, you can do array operations on `BankAccount.all`! Have the students do some `map`, `select`, `find`, and `each` commands with you.
+* Once you've got some fun objects to play with, you can do array operations on `BankAccount.all`! Have the students do some `map`, `select`, `find`, and `each` commands with you. 

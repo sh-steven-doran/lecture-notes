@@ -203,4 +203,12 @@ GROUP BY artists.name;
     in order of the number of rock tracks that they have
     from greatest to least
 
-
+```sql
+SELECT artists.name, COUNT(genres.name) FROM artists
+JOIN albums ON albums.artist_id = artists.id
+JOIN tracks ON tracks.album_id  = albums.id
+JOIN genres ON tracks.genre_id = genres.id
+GROUP BY artists.id
+HAVING genres.name = "Rock"
+;
+```

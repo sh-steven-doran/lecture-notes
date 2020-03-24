@@ -32,8 +32,9 @@
 3. Show how to draw a one-to-many in erd
     * come up with different domain examples
 4. Build out `User` and `Tweet` as per deliverables 
+    * show how to access app through a single point of entry
     * when writing `User#post_tweet` add it manually then extract a private method
-    * __be sure to break at the correct place to talk about *Single Source of Truth*__ --->> right after Tweets can be instantiated and their being saved as an instance variable on the User
+    * __be sure to break at the correct place to talk about *Single Source of Truth*__ --->> right after Tweets can be instantiated and they are being saved as an instance variable on the User
 
 
 

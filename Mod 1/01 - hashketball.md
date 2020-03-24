@@ -18,44 +18,30 @@
 
 --------------------------
 
-```text
-Lecture Plan
+### Hook
 
- 2m  Talk about lectures
- 3m  Working with the spec and intro TDD
- 3m  Build the game hash
-10m  Define the problem
- 5m  Digression on `map`
-10m  Student Exercise
- 5m  Apply to `get_players`
-10m  Digression with `select` and `find`
-10m  Single Responsibility Priniciple (SRP) and putting it together
-===
- 1h  Total 
-```
+* demonstrate a developer's thought process
+* work on array methods
+* talk about tests
 
-### Lecture 101
+### Lecture Flow
 
-* labs are generally deployed before the associated lecture
-* students do better if it’s not the first time seeing the material
-* feel free but I wouldn’t recommend code-along
-* stop and ask questions whenever you need to
-* correct me as I type
+* Just a review of the Hashketball Lab
 
-* just a review of the Hashketball lab
-* explore file structure and what we’ve been given
+1. Lecture 101
+    * shouldn't be first introduction to topic
+    * no code along
 
+2. Explore file structure
+3. TDD and RSpec
+    * Red-Green-Refactor
 
-### TDD and RSpec
-
-* I always start a project - or lab - by looking at the tests and running RSpec
-* use —fail-fast
-* red, green, refactor
-* shameless green - write the smallest amount of code needed to pass test
-* tests are just Ruby code - puts something
-* run specific file or line
-* walk through a spec file
-* feedback loop of reading tests/errors and then making changes to code
+4. Pseudocode and defining the problem
+    * write pseudocode for `num_points_scored`
+    
+5. review `.map` - a method for creating a new array from an enumerable
+6. write a `get_all_players` helper method using map - student activity
+7. use `.find` to solve shoe_size test
 
 ### Defining the Problem
 

@@ -180,13 +180,7 @@ WHERE authors.name = "Robert Jordan";
 ```
 
 
-3. Twitter where Tweets can have Tags (i.e. '#fun', '#learnlovecode', '#tbt'). A tweet can have multiple tags, many tweets can be tagged with the same tag. Tweets have a message and user_id; tags have a name.
-
-
-Q: Write the SQL to find all the tweets tagged '#tbt'
-
-
-4. After completing the questions above, is there a rule you can determine about which table the foreign key belongs on given two associated tables?
+3. After completing the questions above, is there a rule you can determine about which table the foreign key belongs on given two associated tables?
 
     - child table => we want the foreign key to be on the belongs_to table (e.g., the books table)
 
@@ -225,7 +219,10 @@ Ruby: `harry_potter.delete`
 * scripting with Ruby
 * more concise to call "Tweet.all" than to write out entire SQL query
 * puts everything in a single language
-* why else??
+* only have to work with a single language
+* extensibility and maintainability
+* swap out ORMs, keep your Ruby code
+
 
 
 ```ruby
